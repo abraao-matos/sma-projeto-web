@@ -1,0 +1,140 @@
+/*==================== about =================*/
+
+.about__achievements{
+    margin-top: 3rem;
+}
+
+.about__achievements-container{
+    display: grid;
+    grid-template-columns:40% 60%;
+    gap: 5rem;
+}
+
+.about__achievements-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievements__cards{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
+}
+
+.achievement__card{
+    background: #353232;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+.achievement__card:hover{
+    background: #717572af;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.achievement__icon{
+    background: #00bf8e;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achievement__card:nth-child(2) .achievement__icon{
+    background: #f7c94b;
+}
+
+.achievement__card:nth-child(3) .achievement__icon{
+    background: #6c63ff;
+}
+
+.achievement__card p{
+    margin-top: 1rem;
+}
+
+/*==================== FAQS =================*/
+
+.faqs{
+    background: #818783;
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: #353232;
+    cursor: pointer;
+    
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq__icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+}
+
+
+
+/*==================== MIDIA QUERIES(TABLET) =================*/
+
+@media screen and (max-width:1024px){
+   
+    .about__achievements{
+        margin-top: 2rem;
+    }
+
+
+    .about__achievements-container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about__achievements-left{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /*==================== FAQS =================*/
+
+    .faqs__container{
+        grid-template-columns: 1fr;
+    }
+
+    .faq{
+        padding: 1.5rem;
+    }
+}
+
+/*==================== MIDIA QUERIES(CELULAR) =================*/
+
+@media screen and (max-width:600px){
+    .achievements__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+}
